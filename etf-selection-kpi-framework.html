@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ETF Selection: KPI &amp; Evaluation Framework</title><style>
+    :root{--bg:#f6f7f9;--card:#fff;--ink:#17202a;--muted:#5f6b76;--accent:#174a7e;--line:#dfe4ea;--soft:#eef4f9}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+    .wrap{max-width:1100px;margin:auto;padding:28px 20px 60px}.hero{background:linear-gradient(135deg,#102f4f,#246a9c);color:white;border-radius:18px;padding:42px 38px;margin-bottom:24px}
+    h1{font-size:34px;line-height:1.15;margin:0 0 10px} .subtitle{font-size:17px;opacity:.9;margin:0}.updated{font-size:13px;opacity:.75;margin-top:18px}
+    .toc,.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:16px 0;box-shadow:0 2px 8px rgba(20,35,50,.04)}
+    h2{color:var(--accent);font-size:24px;margin:8px 0 14px;border-bottom:1px solid var(--line);padding-bottom:8px} h3{font-size:18px;margin:20px 0 8px}
+    ul{padding-left:22px} li{margin:5px 0}.formula{background:var(--soft);border-left:4px solid var(--accent);padding:11px 14px;margin:10px 0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+    table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px} th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top} th{background:var(--soft)}
+    .pill{display:inline-block;background:#e7f0f7;color:#174a7e;border-radius:999px;padding:3px 9px;font-size:12px;font-weight:700;margin:2px 4px 2px 0}
+    .callout{background:#fff8e8;border:1px solid #f0d9a0;border-radius:10px;padding:14px 16px;margin:14px 0}
+    footer{color:var(--muted);font-size:13px;margin-top:30px;text-align:center}
+    @media(max-width:700px){h1{font-size:28px}.hero{padding:30px 24px}table{display:block;overflow-x:auto;white-space:normal}}
+    </style></head><body><main class="wrap"><div class="hero"><h1>ETF Selection: KPI &amp; Evaluation Framework</h1><p class="subtitle">A comprehensive reference for evaluating equity, factor, income, international, commodity and bond ETFs.</p><div class="updated">Prepared October 2026 • Personal investing reference</div></div><div class="toc"><strong>How to use this report</strong><p>Use the framework as a research checklist, not as a mechanical buy/sell signal. Compare trends, peers, expectations and valuation; investigate disagreements rather than averaging them away.</p></div><section class="card"><h2>ETF evaluation architecture</h2>
+<p>Evaluate an ETF in this order:</p>
+<p><span class="pill">Objective</span><span class="pill">Index/strategy</span><span class="pill">Portfolio</span><span class="pill">Cost</span><span class="pill">Tracking</span><span class="pill">Liquidity</span><span class="pill">Risk</span><span class="pill">Tax</span><span class="pill">Performance</span><span class="pill">Portfolio fit</span></p>
+<p>The key question is not simply “Which ETF performed best?” but “Which ETF gives me the desired exposure most efficiently and reliably?”</p>
+</section><section class="card"><h2>Costs and implementation</h2>
+<ul><li><strong>Expense ratio:</strong> recurring operating cost.</li><li><strong>Tracking difference:</strong> ETF return minus benchmark return.</li><li><strong>Tracking error:</strong> standard deviation of ETF-vs-index return differences.</li><li><strong>Bid-ask spread:</strong> immediate trading cost.</li><li><strong>Slippage:</strong> difference between expected and actual execution.</li><li><strong>Turnover:</strong> portfolio trading intensity; relevant to friction and taxes.</li><li><strong>Securities-lending revenue:</strong> can offset some fund costs.</li><li><strong>Cash drag:</strong> cash held by the fund can create small tracking differences.</li></ul>
+<div class="formula">Total practical cost ≈ Expense Ratio + Tracking Difference + Spread + Slippage + Tax Cost</div>
+</section><section class="card"><h2>Index and portfolio construction</h2>
+<ul><li><strong>Index provider:</strong> S&P, MSCI, FTSE Russell, CRSP, Nasdaq, proprietary, etc.</li><li><strong>Methodology:</strong> understand eligibility, profitability screens, liquidity rules, rebalancing and reconstitution.</li><li><strong>Weighting:</strong> market-cap, equal-weight, factor, fundamental, dividend, volatility, etc.</li><li><strong>Holdings count:</strong> useful but insufficient without concentration.</li><li><strong>Top-10 concentration:</strong> sum of top ten weights.</li><li><strong>Largest holding:</strong> identifies single-name dependence.</li><li><strong>HHI:</strong> Σ weight²; higher means more concentration.</li><li><strong>Effective holdings:</strong> 1 / Σ weight².</li></ul>
+</section><section class="card"><h2>Exposure and factor KPIs</h2>
+<ul><li>Sector weights and sector concentration.</li><li>Country/geographic exposure.</li><li>Market-cap exposure: mega/large/mid/small.</li><li>Style: value/blend/growth.</li><li>Factor exposure: value, momentum, quality, size, low volatility, profitability, dividend.</li><li>Weighted-average P/E, forward P/E, P/B, P/S, EV/EBITDA, P/FCF.</li><li>Weighted earnings growth, ROE/ROIC, margins and leverage.</li></ul>
+<p>For international ETFs distinguish listing location from revenue exposure and understand currency hedging.</p>
+</section><section class="card"><h2>Liquidity and ETF mechanics</h2>
+<ul><li><strong>AUM:</strong> scale and closure-risk indicator, not a return predictor.</li><li><strong>Average daily volume:</strong> useful but not the whole liquidity story.</li><li><strong>Underlying liquidity:</strong> often more important than ETF share volume.</li><li><strong>NAV:</strong> (assets − liabilities) / shares.</li><li><strong>Premium/discount to NAV:</strong> (market price − NAV) / NAV.</li><li><strong>Creation/redemption:</strong> helps keep market price close to NAV.</li><li><strong>Replication:</strong> full replication vs sampling.</li><li><strong>Fund age and closure risk:</strong> older/larger funds provide more implementation evidence.</li></ul>
+</section><section class="card"><h2>Risk and performance analytics</h2>
+<table><tr><th>KPI</th><th>Meaning</th></tr>
+<tr><td>Total return / CAGR</td><td>Use total return including distributions; compare appropriate benchmarks.</td></tr>
+<tr><td>Volatility</td><td>Annualized standard deviation of returns.</td></tr>
+<tr><td>Beta</td><td>Historical sensitivity to a market benchmark.</td></tr>
+<tr><td>Sharpe</td><td>Excess return per unit of total volatility.</td></tr>
+<tr><td>Sortino</td><td>Excess return per unit of downside deviation.</td></tr>
+<tr><td>Maximum drawdown</td><td>Largest peak-to-trough decline.</td></tr>
+<tr><td>Recovery time</td><td>Time required to recover from drawdown.</td></tr>
+<tr><td>Upside capture</td><td>Performance participation during benchmark advances.</td></tr>
+<tr><td>Downside capture</td><td>Performance participation during benchmark declines; lower is generally better.</td></tr>
+<tr><td>Information ratio</td><td>Active return divided by tracking error; useful for active/factor strategies.</td></tr>
+<tr><td>Active share</td><td>How different an active ETF is from its benchmark.</td></tr>
+<tr><td>Correlation</td><td>Relationship with other holdings; central to portfolio diversification.</td></tr>
+</table>
+</section><section class="card"><h2>Valuation and fundamental profile</h2>
+<p>ETF-level valuation metrics help determine what you're actually paying for the underlying portfolio:</p>
+<ul><li>Forward P/E and historical P/E range</li><li>Earnings yield</li><li>Price/book</li><li>Price/sales</li><li>EV/EBITDA</li><li>FCF yield where available</li><li>Expected earnings/revenue growth</li><li>Weighted ROE/ROIC for quality strategies</li><li>Dividend yield and distribution growth for income strategies</li></ul>
+<div class="formula">Earnings Yield = 1 / P/E</div>
+<p>Compare today's valuation with the ETF's own history and with genuinely comparable ETFs, not arbitrary categories.</p>
+</section><section class="card"><h2>Income and bond ETF KPIs</h2>
+<h3>Dividend/income ETFs</h3>
+<ul><li>Dividend yield</li><li>3/5/10-year distribution growth</li><li>Payout ratio and FCF payout of holdings</li><li>Quality/profitability of holdings</li><li>Return of capital</li><li>Covered-call percentage and option methodology for option-income funds</li></ul>
+<h3>Bond ETFs</h3>
+<ul><li><strong>30-day SEC yield</strong></li><li><strong>Yield to maturity</strong></li><li><strong>Yield to worst</strong></li><li><strong>Effective duration</strong></li><li><strong>Average maturity</strong></li><li><strong>Credit quality distribution</strong></li><li><strong>Credit spreads</strong></li><li>Weighted-average coupon</li></ul>
+<div class="formula">% price change ≈ −Duration × change in yield</div>
+</section><section class="card"><h2>Specialized ETF risks</h2>
+<ul><li><strong>Commodity ETFs:</strong> physical vs futures structure, collateral yield and roll yield.</li><li><strong>Contango:</strong> futures roll can reduce returns.</li><li><strong>Backwardation:</strong> roll can add returns.</li><li><strong>Leveraged/inverse ETFs:</strong> daily reset means long-term return is not simply 2× or 3× the index return; volatility drag matters.</li><li><strong>Covered-call ETFs:</strong> assess total return, upside sacrificed, option coverage, NAV behavior and distribution composition—not just yield.</li><li><strong>International ETFs:</strong> currency exposure, local-market hours, hedging costs and country concentration.</li></ul>
+</section><section class="card"><h2>Portfolio-level ETF analysis</h2>
+<p>ETF diversification must be assessed <strong>across the portfolio</strong>, not one fund at a time.</p>
+<ul><li>Holdings overlap</li><li>Weighted overlap</li><li>Sector overlap</li><li>Factor overlap</li><li>Country overlap</li><li>Correlation</li><li>Marginal contribution to portfolio risk</li></ul>
+<div class="callout"><strong>Example:</strong> VOO + QQQ + a large-cap growth ETF can look like three diversified ETFs while creating substantial overlapping mega-cap technology exposure.</div>
+</section><section class="card"><h2>ETF&#x27;s job in the portfolio</h2>
+<p>Every ETF should have a clear one-sentence job:</p>
+<ul><li>Core equity diversification</li><li>Growth tilt</li><li>Value tilt</li><li>Small-cap exposure</li><li>International diversification</li><li>Bonds/income/volatility control</li><li>Dividend strategy</li><li>Sector/tactical exposure</li><li>Thematic satellite</li><li>Commodity/inflation diversification</li></ul>
+<p>If you cannot explain why the ETF belongs in the portfolio, don't buy it simply because its historical chart looks good.</p>
+</section><section class="card"><h2>15-KPI ETF scorecard</h2>
+<ol><li>Index methodology</li><li>Expense ratio</li><li>Tracking difference</li><li>Tracking error</li><li>Top-10 concentration</li><li>Sector exposure</li><li>Portfolio overlap</li><li>AUM</li><li>Bid-ask spread</li><li>Turnover</li><li>Forward P/E</li><li>Earnings growth</li><li>5/10-year total-return CAGR</li><li>Maximum drawdown</li><li>Sharpe/Sortino</li></ol>
+<p>For bond ETFs, prioritize <strong>SEC yield, YTM, YTW, duration, credit quality and spread</strong> instead of relying on equity-style metrics.</p>
+</section><section class="card"><h2>Five questions before buying</h2>
+<ol><li><strong>What exactly does it own?</strong> Read the methodology and actual holdings.</li>
+<li><strong>Why does it improve my portfolio?</strong> Identify the exposure or risk it adds.</li>
+<li><strong>Is there a cheaper/better implementation?</strong> Compare close substitutes.</li>
+<li><strong>How much overlap does it have with what I already own?</strong></li>
+<li><strong>What could make it underperform for 5–10 years?</strong> Know the failure mode before buying.</li></ol>
+</section><footer>Educational research framework only; not individualized investment, tax or legal advice.</footer></main></body></html>
